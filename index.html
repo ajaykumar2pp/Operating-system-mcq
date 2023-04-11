@@ -1580,140 +1580,201 @@ A Non Preemptive Scheduling can take place among which of the following scenario
                 <p class="correct p-2 rounded">All of these<i class="bi bi-check-all ms-2"></i></p>
                 <p class="option p-2 rounded">The method used to determine when to promote a process to a higher priority queue</p>
             </div>
-        </div> <!-- *****************************  Q.2 ************************************** -->
+        </div> <!-- *****************************  Q.60 ************************************** -->
         <div class="row justify-content-center mt-3">
             <div class="col-md-7">
-                <h4>Q.2 Which command is used to print the current working directory?</h4>
-                <p class="option p-2 rounded">cd</p>
-                <p class="option p-2 rounded">ls</p>
-                <p class="correct p-2 rounded">pwd<i class="bi bi-check-all ms-2"></i></p>
+                <h4>Q.60 Problems in Time Sharing</h4>
+                <span>
+                  “One way to implement time sharing will be to run one process for a certain period of time, giving it full access to all memory and related resources, then stop it, run state save on this process and store saved state to disk, load some other process’s state, run it for a while”
+Which of the following most accurately describes the problem with the above approach to implement time sharing?
+                </span>
+                <p class="option p-2 rounded">Saving and restoring register-level state (such as the program counter and general-purpose registers) is slow.</p>
+                <p class="option p-2 rounded">This approach may not work for processes requiring large amount of memory.</p>
+                <p class="correct p-2 rounded">Saving the entire contents of memory to disk is extremely non-performant, as time taken to move the contents between these storage device is brutally slow. This makes this approach very slow.<i class="bi bi-check-all ms-2"></i></p>
+                <p class="option p-2 rounded">There isn’t enough space for saving the entire state of processes so we may get insufficient memory error i.e. we may run out of memory.</p>
+            </div>
+        </div> <!-- *****************************  Q.61 ************************************** -->
+        <div class="row justify-content-center mt-3">
+            <div class="col-md-7">
+                <h4>Q.61 Function of OS</h4>
+                <span>
+                  The act of hiding the actual physical address details of a process and showcasing only virtual address of the process's private address space is __________
+                </span>
+                <p class="option p-2 rounded">Example of arbitration function of OS</p>
+                <p class="option p-2 rounded">Example of OS acting as an interface between hardware and applications</p>
+                <p class="correct p-2 rounded">Example of abstraction function of OS<i class="bi bi-check-all ms-2"></i></p>
+                <p class="option p-2 rounded">None of the above</p>
+            </div>
+        </div> <!-- *****************************  Q.62 ************************************** -->
+        <div class="row justify-content-center mt-3">
+            <div class="col-md-7">
+                <h4>Q.62 Virtual Address Space</h4>
+                <span>
+                  Which of the following is/are region(s) of the virtual address space that may grow or shrink, while the process is running?
+                </span>
+                <p class="option p-2 rounded">code, stack, heap</p>
+                <p class="option p-2 rounded">stack</p>
+                <p class="correct p-2 rounded">stack, heap<i class="bi bi-check-all ms-2"></i></p>
+                <p class="option p-2 rounded">code, stack</p>
+            </div>
+        </div> <!-- *****************************  Q.63 ************************************** -->
+        <div class="row justify-content-center mt-3">
+            <div class="col-md-7">
+                <h4>Q.63 Physical Address Mapping</h4>
+                <span>
+                  Process P with 16KB of address space, loads into memory at the physical address of 256KB.
+When process P tries to perform a load at address 0KB (which we will call a virtual address), then the OS, with the help of hardware, maps this virtual address to which of the following physical address?
+                </span>
+                <p class="option p-2 rounded">Physical address 0KB</p>
+                <p class="option p-2 rounded">Physical address 320KB</p>
+                <p class="correct p-2 rounded">Physical address 256KB<i class="bi bi-check-all ms-2"></i></p>
+                <p class="option p-2 rounded">Physical address 512KB</p>
+            </div>
+        </div> <!-- *****************************  Q.64 ************************************** -->
+        <div class="row justify-content-center mt-3">
+            <div class="col-md-7">
+                <h4>Q.64 Select True or False for the following statement.
+                  Statement: The stack is used for dynamically-allocated data structures such as linked lists and many others. It is user-managed memory, such as that you might receive from a call to malloc() in C.</h4>
+                
+                <p class="option p-2 rounded">True</p>
+                <p class="correct p-2 rounded">False<i class="bi bi-check-all ms-2"></i></p>
+              
+            </div>
+        </div> <!-- *****************************  Q.65 ************************************** -->
+        <div class="row justify-content-center mt-3">
+            <div class="col-md-7">
+                <h4>Q.65 Choose the correct option</h4>
+                <span>
+                  Select the correct statements about stack and heap. <br>
+1. Unlike a stack where the memory is allocated as a contiguous block, in the case of the heap, the memory is allocated in the random order. <br>
+2. Unlike stack memory, allocation and deallocation in heap memory have to be handled by the programmer. <br>
+3. For a particular function, stack memory is deallocated as soon as the return statement is executed. <br>
+4. If the programmer doesn’t manage the heap memory efficiently and forgets to deallocate the allocated memory, it will cause a memory leak.
+                </span>
+                <p class="option p-2 rounded">1 and 2 are correct</p>
+                <p class="option p-2 rounded">2, 3 and 4 are correct</p>
+                <p class="correct p-2 rounded">All the statements are correct<i class="bi bi-check-all ms-2"></i></p>
+                <p class="option p-2 rounded">1, 2 and 3 are correct</p>
+            </div>
+        </div> <!-- *****************************  Q.66 ************************************** -->
+        <div class="row justify-content-center mt-3">
+            <div class="col-md-7">
+                <h4>Q.66 Layer of Memory</h4>
+                <span>
+                  In the process of retrieving the data stored in memory, what are the reasons of adding an extra layer of virtual memory?
+                </span>
+                <p class="option p-2 rounded">This is done so that the process doesn’t have direct access to physical memory.</p>
+                <p class="option p-2 rounded">This is done for ease of usage of physical memory. Virtual memory makes it easier for the process to access physical memory.</p>
+                <p class="correct p-2 rounded">This is done for protection. By adding this layer, the OS makes sure that processes are isolated and protected from one another.<i class="bi bi-check-all ms-2"></i></p>
                 <p class="option p-2 rounded">None of above</p>
             </div>
-        </div> <!-- *****************************  Q.2 ************************************** -->
+        </div> <!-- *****************************  Q.67 ************************************** -->
         <div class="row justify-content-center mt-3">
             <div class="col-md-7">
-                <h4>Q.2 Which command is used to print the current working directory?</h4>
-                <p class="option p-2 rounded">cd</p>
-                <p class="option p-2 rounded">ls</p>
-                <p class="correct p-2 rounded">pwd<i class="bi bi-check-all ms-2"></i></p>
+                <h4>Q.67 Base Register</h4>
+                <span>
+                  Which of the following is achieved by using a base register?
+                </span>
+                <p class="option p-2 rounded">It stores the contents in the virtual address space so that they can be transferred to their corresponding physical address space.</p>
+                <p class="option p-2 rounded">It is used to store all the physical addresses that form the address space of a program.</p>
+                <p class="correct p-2 rounded">It transforms virtual addresses (generated by the program) into physical addresses.<i class="bi bi-check-all ms-2"></i></p>
+                <p class="option p-2 rounded">It ensures that such addresses are within the confines of the address space.</p>
+            </div>
+        </div> <!-- *****************************  Q.68 ************************************** -->
+        <div class="row justify-content-center mt-3">
+            <div class="col-md-7">
+                <h4>Q.68 Choose the correct option</h4>
+                <span>
+                  What does a CPU do when a process tries to access memory outside its bounds?
+                </span>
+                <p class="option p-2 rounded">The CPU modifies its bounds to access the memory that the process wants.</p>
+                <p class="option p-2 rounded">The CPU omits that particular instruction in the program</p>
+                <p class="correct p-2 rounded">The CPU raises an exception.<i class="bi bi-check-all ms-2"></i></p>
                 <p class="option p-2 rounded">None of above</p>
             </div>
-        </div> <!-- *****************************  Q.2 ************************************** -->
+        </div> <!-- *****************************  Q.69 ************************************** -->
         <div class="row justify-content-center mt-3">
             <div class="col-md-7">
-                <h4>Q.2 Which command is used to print the current working directory?</h4>
-                <p class="option p-2 rounded">cd</p>
-                <p class="option p-2 rounded">ls</p>
-                <p class="correct p-2 rounded">pwd<i class="bi bi-check-all ms-2"></i></p>
+                <h4>Q.69 Protection of Processes</h4>
+                <span>
+                  Which of the following address is, generated by computer system, to isolate and protect the processes from each other? <br>
+Note: This question was asked in Amazon.
+                </span>
+                <p class="option p-2 rounded">Physical Address</p>
+                <p class="option p-2 rounded">Absolute Address</p>
+                <p class="correct p-2 rounded">Virtual Address [also known as logical address]<i class="bi bi-check-all ms-2"></i></p>
                 <p class="option p-2 rounded">None of above</p>
             </div>
-        </div> <!-- *****************************  Q.2 ************************************** -->
+        </div> <!-- *****************************  Q.70 ************************************** -->
         <div class="row justify-content-center mt-3">
             <div class="col-md-7">
-                <h4>Q.2 Which command is used to print the current working directory?</h4>
-                <p class="option p-2 rounded">cd</p>
-                <p class="option p-2 rounded">ls</p>
-                <p class="correct p-2 rounded">pwd<i class="bi bi-check-all ms-2"></i></p>
+                <h4>Q.70 Address Mapping</h4>
+                <span>
+                  Runtime mapping from virtual to physical address is done by - <br>
+Note: This question was asked in TCS.
+                </span>
+                <p class="option p-2 rounded">CPU</p>
+                <p class="option p-2 rounded">Operating System</p>
+                <p class="correct p-2 rounded">Memory Management Unit<i class="bi bi-check-all ms-2"></i></p>
                 <p class="option p-2 rounded">None of above</p>
             </div>
-        </div> <!-- *****************************  Q.2 ************************************** -->
+        </div> <!-- *****************************  Q.71 ************************************** -->
         <div class="row justify-content-center mt-3">
             <div class="col-md-7">
-                <h4>Q.2 Which command is used to print the current working directory?</h4>
-                <p class="option p-2 rounded">cd</p>
-                <p class="option p-2 rounded">ls</p>
-                <p class="correct p-2 rounded">pwd<i class="bi bi-check-all ms-2"></i></p>
-                <p class="option p-2 rounded">None of above</p>
+                <h4>Q.71 Problems of Fixed Partitioning</h4>
+                <span>
+                  Select the correct statement about problems faced in Fixed Partitioning:
+                </span>
+                <p class="option p-2 rounded">The problem of Internal fragmentation is present in the Fixed Partitioning.</p>
+                <p class="option p-2 rounded">The degree of multiprogramming is fixed in Fixed Partitioning.</p>
+                <p class="correct p-2 rounded">All the above statements are correct.<i class="bi bi-check-all ms-2"></i></p>
+                <p class="option p-2 rounded">A process whose size is greater than the largest contiguous space available cannot be accommodated.</p>
+                <p class="option p-2 rounded">The problem of External fragmentation is present in the Fixed Partitioning.</p>
             </div>
-        </div> <!-- *****************************  Q.2 ************************************** -->
+        </div> <!-- *****************************  Q.72 ************************************** -->
         <div class="row justify-content-center mt-3">
             <div class="col-md-7">
-                <h4>Q.2 Which command is used to print the current working directory?</h4>
-                <p class="option p-2 rounded">cd</p>
-                <p class="option p-2 rounded">ls</p>
-                <p class="correct p-2 rounded">pwd<i class="bi bi-check-all ms-2"></i></p>
-                <p class="option p-2 rounded">None of above</p>
+                <h4>Q.72 Identify the Allocation Method</h4>
+                <span>
+                  Identify the memory allocation method applied in the following diagram:
+                </span>
+                <img src="https://files.codingninjas.in/image_fixedpartitioning-11205.png" alt="" class="img-fluid" height="100px">
+                <p class="option p-2 rounded">It can be both. Insufficient data.</p>
+                <p class="option p-2 rounded">Dynamic Partitioning Method</p>
+                <p class="correct p-2 rounded">Fixed Partitioning Method<i class="bi bi-check-all ms-2"></i></p>
+                <p class="option p-2 rounded">Neither Fixed Partitioning nor Dynamic Partitioning</p>
             </div>
-        </div> <!-- *****************************  Q.2 ************************************** -->
+        </div> <!-- *****************************  Q.73 ************************************** -->
         <div class="row justify-content-center mt-3">
             <div class="col-md-7">
-                <h4>Q.2 Which command is used to print the current working directory?</h4>
-                <p class="option p-2 rounded">cd</p>
-                <p class="option p-2 rounded">ls</p>
-                <p class="correct p-2 rounded">pwd<i class="bi bi-check-all ms-2"></i></p>
-                <p class="option p-2 rounded">None of above</p>
+                <h4>Q.73 Solutions from Dynamic Partitioning</h4>
+                <span>
+                  Select the problems of Fixed Partitioning, which are solved by Dynamic Partitioning: <br>
+                  1. Problem of Internal Fragmentation <br>
+2. Fixed degree of multiprogramming <br>
+3. Problem of External Fragmentation <br>
+                </span>
+                <p class="option p-2 rounded">2 and 3 are solved</p>
+                <p class="option p-2 rounded">1 and 3 are solved</p>
+                <p class="correct p-2 rounded">1 and 2 are solved<i class="bi bi-check-all ms-2"></i></p>
+                <p class="option p-2 rounded">1, 2 and 3 are solved</p>
             </div>
-        </div> <!-- *****************************  Q.2 ************************************** -->
+        </div> <!-- *****************************  Q.74 ************************************** -->
         <div class="row justify-content-center mt-3">
             <div class="col-md-7">
-                <h4>Q.2 Which command is used to print the current working directory?</h4>
-                <p class="option p-2 rounded">cd</p>
-                <p class="option p-2 rounded">ls</p>
-                <p class="correct p-2 rounded">pwd<i class="bi bi-check-all ms-2"></i></p>
-                <p class="option p-2 rounded">None of above</p>
-            </div>
-        </div> <!-- *****************************  Q.2 ************************************** -->
-        <div class="row justify-content-center mt-3">
-            <div class="col-md-7">
-                <h4>Q.2 Which command is used to print the current working directory?</h4>
-                <p class="option p-2 rounded">cd</p>
-                <p class="option p-2 rounded">ls</p>
-                <p class="correct p-2 rounded">pwd<i class="bi bi-check-all ms-2"></i></p>
-                <p class="option p-2 rounded">None of above</p>
-            </div>
-        </div> <!-- *****************************  Q.2 ************************************** -->
-        <div class="row justify-content-center mt-3">
-            <div class="col-md-7">
-                <h4>Q.2 Which command is used to print the current working directory?</h4>
-                <p class="option p-2 rounded">cd</p>
-                <p class="option p-2 rounded">ls</p>
-                <p class="correct p-2 rounded">pwd<i class="bi bi-check-all ms-2"></i></p>
-                <p class="option p-2 rounded">None of above</p>
-            </div>
-        </div> <!-- *****************************  Q.2 ************************************** -->
-        <div class="row justify-content-center mt-3">
-            <div class="col-md-7">
-                <h4>Q.2 Which command is used to print the current working directory?</h4>
-                <p class="option p-2 rounded">cd</p>
-                <p class="option p-2 rounded">ls</p>
-                <p class="correct p-2 rounded">pwd<i class="bi bi-check-all ms-2"></i></p>
-                <p class="option p-2 rounded">None of above</p>
-            </div>
-        </div> <!-- *****************************  Q.2 ************************************** -->
-        <div class="row justify-content-center mt-3">
-            <div class="col-md-7">
-                <h4>Q.2 Which command is used to print the current working directory?</h4>
-                <p class="option p-2 rounded">cd</p>
-                <p class="option p-2 rounded">ls</p>
-                <p class="correct p-2 rounded">pwd<i class="bi bi-check-all ms-2"></i></p>
-                <p class="option p-2 rounded">None of above</p>
-            </div>
-        </div> <!-- *****************************  Q.2 ************************************** -->
-        <div class="row justify-content-center mt-3">
-            <div class="col-md-7">
-                <h4>Q.2 Which command is used to print the current working directory?</h4>
-                <p class="option p-2 rounded">cd</p>
-                <p class="option p-2 rounded">ls</p>
-                <p class="correct p-2 rounded">pwd<i class="bi bi-check-all ms-2"></i></p>
-                <p class="option p-2 rounded">None of above</p>
-            </div>
-        </div> <!-- *****************************  Q.2 ************************************** -->
-        <div class="row justify-content-center mt-3">
-            <div class="col-md-7">
-                <h4>Q.2 Which command is used to print the current working directory?</h4>
-                <p class="option p-2 rounded">cd</p>
-                <p class="option p-2 rounded">ls</p>
-                <p class="correct p-2 rounded">pwd<i class="bi bi-check-all ms-2"></i></p>
-                <p class="option p-2 rounded">None of above</p>
-            </div>
-        </div> <!-- *****************************  Q.2 ************************************** -->
-        <div class="row justify-content-center mt-3">
-            <div class="col-md-7">
-                <h4>Q.2 Which command is used to print the current working directory?</h4>
-                <p class="option p-2 rounded">cd</p>
-                <p class="option p-2 rounded">ls</p>
-                <p class="correct p-2 rounded">pwd<i class="bi bi-check-all ms-2"></i></p>
-                <p class="option p-2 rounded">None of above</p>
+                <h4>Q.74 Free Space in Memory</h4>
+                <span>
+                  The free space consists of variable-sized units such that there is not enough contiguous space to satisfy a request or to allocate to a process. <br>
+For example: in the following, even if we have free space of 5 MB, we will not be able to allocate that space to a process which comes with a request for 5 MB because 5 MB is not present contiguously.
+                </span> 
+                <img src="https://files.codingninjas.in/image_externalfragmentation-11204.png" alt="" class="img-fluid">
+                <span>
+                  Which of the following best describes the statement above?
+                </span>
+                <p class="option p-2 rounded">Partitioning</p>
+                <p class="option p-2 rounded">Internal Fragmentation</p>
+                <p class="correct p-2 rounded">External Fragmentation<i class="bi bi-check-all ms-2"></i></p>
+                <p class="option p-2 rounded">None of the above</p>
             </div>
         </div> <!-- *****************************  Q.2 ************************************** -->
         <div class="row justify-content-center mt-3">
