@@ -1776,230 +1776,349 @@ For example: in the following, even if we have free space of 5 MB, we will not b
                 <p class="correct p-2 rounded">External Fragmentation<i class="bi bi-check-all ms-2"></i></p>
                 <p class="option p-2 rounded">None of the above</p>
             </div>
-        </div> <!-- *****************************  Q.2 ************************************** -->
+        </div> <!-- *****************************  Q.75 ************************************** -->
         <div class="row justify-content-center mt-3">
             <div class="col-md-7">
-                <h4>Q.2 Which command is used to print the current working directory?</h4>
-                <p class="option p-2 rounded">cd</p>
-                <p class="option p-2 rounded">ls</p>
-                <p class="correct p-2 rounded">pwd<i class="bi bi-check-all ms-2"></i></p>
+                <h4>Q.75 Which of these data structure was used to represent free memory in the lecture video? ?</h4>
+                <p class="option p-2 rounded">free hash table</p>
+                <p class="option p-2 rounded">free tree</p>
+                <p class="correct p-2 rounded">free list<i class="bi bi-check-all ms-2"></i></p>
+                <p class="option p-2 rounded">free heap</p>
+            </div>
+        </div> <!-- *****************************  Q.76 ************************************** -->
+        <div class="row justify-content-center mt-3">
+            <div class="col-md-7">
+                <h4>Q.76 Time of Completion</h4>
+                <span> 
+                  In a computer system with 4 CPUs available, where the 'best-fit' algorithm is used for allocating 'jobs' to memory partitions, the following situation was encountered:
+                </span>
+                <table class="table table-bordered border-danger">
+                  <thead>
+                    <tr>
+                      <th scope="col">Partition sizes in KB </th>
+                      <th scope="col">4k</th>
+                      <th scope="col">8k</th>
+                      <th scope="col">20k</th>
+                      <th scope="col">2k</th>
+                      
+                      
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <th scope="row">Jobs</th>
+                      <td> 2k</td>
+                      <td>14k</td>
+                      <td>3k</td>
+                      <td>6k</td>
+                      <td>10k</td>
+                      <td>20k</td>
+                      <td>2k</td>
+                      
+                      
+                    </tr>
+                    <tr>
+                      <th scope="row">Times for Execution</th>
+                      <td>4</td>
+                      <td>10</td>
+                      <td>2</td>
+                      <td>1</td>
+                      <td>1</td>
+                      <td>8</td>
+                      <td>6</td>
+
+                    </tr>
+                  
+                   
+                  </tbody>
+                </table>
+                <span>
+                  Assuming the scheduling algorithm is FCFS scheduling and the memory allocation method is Fixed Partitioning, when will the 20k job be completed.
+Note: Every job enters the queue at 0 units of time.
+                </span>
+                <p class="option p-2 rounded">20 units of time</p>
+                <p class="option p-2 rounded">18 units of time</p>
+                <p class="correct p-2 rounded">19 units of time<i class="bi bi-check-all ms-2"></i></p>
+                <p class="option p-2 rounded">21 units of time</p>
+            </div>
+        </div> <!-- *****************************  Q.77 ************************************** -->
+        <div class="row justify-content-center mt-3">
+            <div class="col-md-7">
+                <h4>Q.77 Choose the correct option</h4>
+                <span>
+                  Consider the requests from processes in given order 300K, 25K, 125K, and 50K. Let there be two blocks of memory available of size 150K followed by a block size 350K. Assume the memory allocation technique to be used is Dynamic Partitioning.
+Which of the following partition allocation schemes can satisfy the above requests?
+                </span>
+                <p class="option p-2 rounded">Best fit but not first fit.</p>
+                <p class="option p-2 rounded">Both First fit & Best fit.</p>
+                <p class="correct p-2 rounded">First fit but not best fit.<i class="bi bi-check-all ms-2"></i></p>
+                <p class="option p-2 rounded">Neither first fit nor best fit.</p>
+            </div>
+        </div> <!-- *****************************  Q.78 ************************************** -->
+        <div class="row justify-content-center mt-3">
+            <div class="col-md-7">
+                <h4>Q.78 Best Strategy</h4>
+                <span>
+                  Select all the basic strategies to manage free space in which we can avoid exhaustive searches on the entire free space:
+                </span>
+                <p class="option p-2 rounded">Best Fit</p>
+                <p class="option p-2 rounded">Worst Fit</p>
+                <p class="correct p-2 rounded">First Fit <i class="bi bi-check-all ms-2"></i></p>
+                <p class="correct p-2 rounded">Next Fit <i class="bi bi-check-all ms-2"></i></p>
+                <span>
+                  1. The First Fit algorithm scans the memory blocks, and whenever it finds the first big enough memory block to store a process, it stops scanning and loads the job into that block. This algorithm avoids exhaustive searches on entire free space. <br>
+ <br>
+2. The Next Fit algorithm works the same as the First Fit algorithm, except that Next fit scans the memory blocks from the block where it previously allocated a job. Like the first-fit algorithm,  the next fit algorithm avoids exhaustive searches on the entire free space. <br> <br>
+
+
+3. The Best Fit algorithm searches the whole set of memory blocks and tries to find out the smallest memory block possible in the list that can accommodate the size requirement of the process. The best-fit algorithm results in exhaustive searches of the entire memory space. <br> <br>
+
+4. The Worst Fit algorithm scans the entire memory block every time and tries to find out the biggest block in the list, which can fulfil the requirement of the process. The worst-fit algorithm results in exhaustive searches of the entire memory space. <br> 
+                </span>
+            </div>
+        </div> <!-- *****************************  Q.79 ************************************** -->
+        <div class="row justify-content-center mt-3">
+            <div class="col-md-7">
+                <h4>Q.79 Fill in the blanks:
+                  Using the approach of ____________ to improve memory allocation, if a particular application has one (or a few) popular-sized requests that it makes, we’ll keep a separate list just to manage objects of that size. All other requests are forwarded to a more general memory allocator.</h4>
+                <p class="option p-2 rounded">Buddy allocation</p>
+                <p class="option p-2 rounded">Growing the Heap</p>
+                <p class="correct p-2 rounded">Segregated Lists<i class="bi bi-check-all ms-2"></i></p>
+                <p class="option p-2 rounded">Merging</p>
+            </div>
+        </div> <!-- *****************************  Q.80 ************************************** -->
+        <div class="row justify-content-center mt-3">
+            <div class="col-md-7">
+                <h4>Q.80 In the following problem description, consider holes as synonyms for free memory spaces. <br>
+                  Problem Description: <br>
+                  Consider allocation of memory to a new process. Assume that none of the existing holes in the memory will exactly fit the process’s memory requirement. Hence, a new hole of smaller size will be created if allocation is made in any of the existing holes. Which one of the following statements is TRUE ?</h4>
+                <p class="option p-2 rounded">The hole created by the worst fit is always larger than the hole created by the first fit.</p>
+                <p class="option p-2 rounded">The hole created by the first fit is always larger than the hole created by the next fit.</p>
+                <p class="correct p-2 rounded">The hole created by the best fit is never larger than the hole created by the first fit.<i class="bi bi-check-all ms-2"></i></p>
+                <p class="option p-2 rounded">The hole created by the next fit is never larger than the hole created by best fit.</p>
+            </div>
+        </div> <!-- *****************************  Q.81 ************************************** -->
+        <div class="row justify-content-center mt-3">
+            <div class="col-md-7">
+                <h4>Q.81 What does base of a segment contain?</h4>
+                <p class="option p-2 rounded">The capacity or size of segment</p>
+                <p class="option p-2 rounded">Stores the starting address of virtual address space of memory</p>
+                <p class="correct p-2 rounded">Contains the starting address where process is loaded at physical memory<i class="bi bi-check-all ms-2"></i></p>
                 <p class="option p-2 rounded">None of above</p>
             </div>
-        </div> <!-- *****************************  Q.2 ************************************** -->
+        </div> <!-- *****************************  Q.82 ************************************** -->
         <div class="row justify-content-center mt-3">
             <div class="col-md-7">
-                <h4>Q.2 Which command is used to print the current working directory?</h4>
-                <p class="option p-2 rounded">cd</p>
-                <p class="option p-2 rounded">ls</p>
-                <p class="correct p-2 rounded">pwd<i class="bi bi-check-all ms-2"></i></p>
+                <h4>Q.82 Which of the following can cause a segmentation fault?</h4>
+                <p class="option p-2 rounded">The data of segment bases are corrupted</p>
+                <p class="option p-2 rounded">A process requesting an address which exist absolutely fine.</p>
+                <p class="correct p-2 rounded">A process accessing illegal address, which is beyond the bounds of address space assigned to process<i class="bi bi-check-all ms-2"></i></p>
+                <p class="option p-2 rounded">A process accessing stack segment instead of heap segment</p>
+            </div>
+        </div> <!-- *****************************  Q.83 ************************************** -->
+        <div class="row justify-content-center mt-3">
+            <div class="col-md-7">
+                <h4>Q.83 What are the bits introduced, per segment, to implement code sharing in memory management module of OS?</h4>
+                <p class="option p-2 rounded">Read-write bits</p>
+                <p class="option p-2 rounded">Reading bits</p>
+                <p class="correct p-2 rounded">Protection bits<i class="bi bi-check-all ms-2"></i></p>
+                <p class="option p-2 rounded">Permission bits</p>
+            </div>
+        </div> <!-- *****************************  Q.84 ************************************** -->
+        <div class="row justify-content-center mt-3">
+            <div class="col-md-7">
+                <h4>Q.84 Select the correct option for the following statement: <br>
+                  To find which code segment the virtual address belongs to, we would always need 2 bits.</h4>
+                
+                <p class="option p-2 rounded">False</p>
+                <p class="correct p-2 rounded">Ture<i class="bi bi-check-all ms-2"></i></p>
+                
+            </div>
+        </div> <!-- *****************************  Q.85 ************************************** -->
+        <div class="row justify-content-center mt-3">
+            <div class="col-md-7">
+                <h4>Q.85 Select the correct option for the following statement: <br>
+                  External fragmentation is avoided when segmentation is used.</h4>
+               
+                <p class="correct p-2 rounded">False<i class="bi bi-check-all ms-2"></i></p>
+                <p class="option p-2 rounded">Ture</p>
+            </div>
+        </div> <!-- *****************************  Q.86 ************************************** -->
+        <div class="row justify-content-center mt-3">
+            <div class="col-md-7">
+                <h4>Q.86 Select all the components in which the virtual address generated by a process is initially broken into:</h4>
+                <p class="option p-2 rounded">the offset within the page </p>
+                <p class="option p-2 rounded">page table entry (PTE)</p>
+                <p class="correct p-2 rounded">the virtual page number (VPN) <i class="bi bi-check-all ms-2"></i></p>
+                <p class="correct p-2 rounded">physical frame number (PFN) <i class="bi bi-check-all ms-2"></i></p>
+            </div>
+        </div> <!-- *****************************  Q.87 ************************************** -->
+        <div class="row justify-content-center mt-3">
+            <div class="col-md-7">
+                <h4>Q.87 Fill in the blank:
+                  A __________ stores virtual-to-physical address translations, thus letting the system know where each page of an address space actually resides in physical memory.</h4>
+                <p class="option p-2 rounded">page table entry (PTE)</p>
+                <p class="option p-2 rounded">page framepage offset</p>
+                <p class="correct p-2 rounded">page table<i class="bi bi-check-all ms-2"></i></p>
                 <p class="option p-2 rounded">None of above</p>
             </div>
-        </div> <!-- *****************************  Q.2 ************************************** -->
+        </div> <!-- *****************************  Q.88 ************************************** -->
         <div class="row justify-content-center mt-3">
             <div class="col-md-7">
-                <h4>Q.2 Which command is used to print the current working directory?</h4>
-                <p class="option p-2 rounded">cd</p>
-                <p class="option p-2 rounded">ls</p>
-                <p class="correct p-2 rounded">pwd<i class="bi bi-check-all ms-2"></i></p>
+                <h4>Q.88 Which of the following refers to the fixed-sized units that the physical memory is divided into?</h4>
+                <p class="option p-2 rounded">Pages</p>
+                <p class="option p-2 rounded">Page Tables</p>
+                <p class="correct p-2 rounded">Page Frames<i class="bi bi-check-all ms-2"></i></p>
+                <p class="option p-2 rounded">Segments</p>
+            </div>
+        </div> <!-- *****************************  Q.89 ************************************** -->
+        <div class="row justify-content-center mt-3">
+            <div class="col-md-7">
+                <h4>Q.89 Virtual Address to Physical Address</h4>
+                <span>
+                  For a process of 64 B virtual address and 128 B physical address and following page table: <br><br>
+                  What will be the physical address for virtual address 37?
+                </span>
+                <table class="table table-bordered border-danger">
+                  <thead class="text-center">
+                    <tr>
+                      <th scope="col">Virtual Page Number</th>
+                      <th scope="col">Physical Page Number</th>
+                      
+                      
+                      
+                    </tr>
+                  </thead>
+                  <tbody class="text-center">
+                    <tr>
+                      <th scope="row">0</th>
+                      <td> 3</td>
+            
+                    </tr>
+                    <tr>
+                      <th scope="row">1</th>
+                      <td>7</td>
+   
+                    </tr>
+                    <tr>
+                      <th scope="row">2</th>
+                      <td>5</td>
+   
+                    </tr>
+                    <tr>
+                      <th scope="row">3</th>
+                      <td>2</td>
+   
+                    </tr>
+                  
+                   
+                  </tbody>
+                </table>
+                <p class="option p-2 rounded">75</p>
+                <p class="option p-2 rounded">89</p>
+                <p class="correct p-2 rounded">85<i class="bi bi-check-all ms-2"></i></p>
+                <p class="option p-2 rounded">95</p>
+            </div>
+        </div> <!-- *****************************  Q.90 ************************************** -->
+        <div class="row justify-content-center mt-3">
+            <div class="col-md-7">
+                <h4>Q.90 Select the correct option for the following statement: <br>
+                  External fragmentation is avoided when paging is used.</h4>
+              
+                <p class="correct p-2 rounded">Ture<i class="bi bi-check-all ms-2"></i></p>
+                <p class="option p-2 rounded">False</p>
+            </div>
+        </div> <!-- *****************************  Q.91 ************************************** -->
+        <div class="row justify-content-center mt-3">
+            <div class="col-md-7">
+                <h4>Q.91 Slow Paging!?</h4>
+                <span>
+
+                  What is the most accurate description for slowness of Paging?
+                </span>
+                <p class="option p-2 rounded">Division of physical address space into frames</p>
+                <p class="option p-2 rounded">Extra space allocated for page table</p>
+                <p class="correct p-2 rounded">Too many memory references to access the actual data stored<i class="bi bi-check-all ms-2"></i></p>
+                <p class="option p-2 rounded">Division of virtual address space into pages</p>
+            </div>
+        </div> <!-- *****************************  Q.92 ************************************** -->
+        <div class="row justify-content-center mt-3">
+            <div class="col-md-7">
+                <h4>Q.92 Fill the blank cells in table</h4>
+                <img src="./Images/Screenshot (255).png" alt="" class="img-fluid">
+            </div>
+        </div> <!-- *****************************  Q.93 ************************************** -->
+        <div class="row justify-content-center mt-3">
+            <div class="col-md-7">
+                <h4>Q.93 “TLB is a hardware cache which stores the contents of a Page table. CPU always checks TLB first, before moving to the page table in case of page miss. If the memory reference is made for the first time in TLB, then it always results in Page Miss.”
+                  Select the correct option for the above statement.</h4>
+               
+                <p class="correct p-2 rounded">Ture<i class="bi bi-check-all ms-2"></i></p>
+                <p class="option p-2 rounded">False</p>
+            </div>
+        </div> <!-- *****************************  Q.94 ************************************** -->
+        <div class="row justify-content-center mt-3">
+            <div class="col-md-7">
+                <h4>Q.94 What is the most accurate description of TLB hit?</h4>
+                <p class="option p-2 rounded">The TLB contains the mapping for the requested physical address</p>
+                <p class="option p-2 rounded">The TLB checks and confirms whether this virtual address is accessible</p>
+                <p class="correct p-2 rounded">The TLB contains the mapping for the requested virtual address<i class="bi bi-check-all ms-2"></i></p>
                 <p class="option p-2 rounded">None of above</p>
             </div>
-        </div> <!-- *****************************  Q.2 ************************************** -->
+        </div> <!-- *****************************  Q.95 ************************************** -->
         <div class="row justify-content-center mt-3">
             <div class="col-md-7">
-                <h4>Q.2 Which command is used to print the current working directory?</h4>
-                <p class="option p-2 rounded">cd</p>
-                <p class="option p-2 rounded">ls</p>
-                <p class="correct p-2 rounded">pwd<i class="bi bi-check-all ms-2"></i></p>
-                <p class="option p-2 rounded">None of above</p>
+                <h4>Q.95 Which of the following addition is done to provide hardware support for sharing of TLB across context switching?</h4>
+                <p class="option p-2 rounded">Valid bit</p>
+                <p class="option p-2 rounded">Protection bit</p>
+                <p class="correct p-2 rounded">Address space identifier (ASID)<i class="bi bi-check-all ms-2"></i></p>
+                <p class="option p-2 rounded">Permission bit</p>
             </div>
-        </div> <!-- *****************************  Q.2 ************************************** -->
+        </div> <!-- *****************************  Q.96 ************************************** -->
         <div class="row justify-content-center mt-3">
             <div class="col-md-7">
-                <h4>Q.2 Which command is used to print the current working directory?</h4>
-                <p class="option p-2 rounded">cd</p>
-                <p class="option p-2 rounded">ls</p>
-                <p class="correct p-2 rounded">pwd<i class="bi bi-check-all ms-2"></i></p>
-                <p class="option p-2 rounded">None of above</p>
+                <h4>Q.96 What is the term used for using swap space for accessing a page, which is not present in physical memory?</h4>
+                <p class="option p-2 rounded">Segmentation Fault</p>
+                <p class="option p-2 rounded">Page Miss</p>
+                <p class="correct p-2 rounded">Page Fault<i class="bi bi-check-all ms-2"></i></p>
+                <p class="option p-2 rounded">Swap Space Hit</p>
             </div>
-        </div> <!-- *****************************  Q.2 ************************************** -->
+        </div> <!-- *****************************  Q.97 ************************************** -->
         <div class="row justify-content-center mt-3">
             <div class="col-md-7">
-                <h4>Q.2 Which command is used to print the current working directory?</h4>
-                <p class="option p-2 rounded">cd</p>
-                <p class="option p-2 rounded">ls</p>
-                <p class="correct p-2 rounded">pwd<i class="bi bi-check-all ms-2"></i></p>
-                <p class="option p-2 rounded">None of above</p>
+                <h4>Q.97 Page Fault</h4>
+                <span>
+                  Consider the following page trace: <br>
+4,3,2,1,4,3,5,4,3,2,1,5   <br>
+Determine the number of page fault that would occur if FIFO Page Replacement Algorithm is used with number of frames for the job m=4 will be
+                </span>
+                <p class="option p-2 rounded">9</p>
+                <p class="option p-2 rounded">12</p>
+                <p class="correct p-2 rounded">10<i class="bi bi-check-all ms-2"></i></p>
+                <p class="option p-2 rounded">8</p>
             </div>
-        </div> <!-- *****************************  Q.2 ************************************** -->
+        </div> <!-- *****************************  Q.98 ************************************** -->
         <div class="row justify-content-center mt-3">
             <div class="col-md-7">
-                <h4>Q.2 Which command is used to print the current working directory?</h4>
-                <p class="option p-2 rounded">cd</p>
-                <p class="option p-2 rounded">ls</p>
-                <p class="correct p-2 rounded">pwd<i class="bi bi-check-all ms-2"></i></p>
-                <p class="option p-2 rounded">None of above</p>
+              <h4>Q.98 LRU - I  </h4>
+                <span> An LRU page Replacement is used with four page frames and eight pages. How many page faults will occur with reference string 0172237103 if the four frames are initially empty?</span>
+                <p class="option p-2 rounded">4</p>
+                <p class="option p-2 rounded">5</p>
+                <p class="correct p-2 rounded">6<i class="bi bi-check-all ms-2"></i></p>
+                <p class="option p-2 rounded">7</p>
             </div>
-        </div> <!-- *****************************  Q.2 ************************************** -->
+        </div> <!-- *****************************  Q.99 ************************************** -->
         <div class="row justify-content-center mt-3">
             <div class="col-md-7">
-                <h4>Q.2 Which command is used to print the current working directory?</h4>
-                <p class="option p-2 rounded">cd</p>
-                <p class="option p-2 rounded">ls</p>
-                <p class="correct p-2 rounded">pwd<i class="bi bi-check-all ms-2"></i></p>
-                <p class="option p-2 rounded">None of above</p>
-            </div>
-        </div> <!-- *****************************  Q.2 ************************************** -->
-        <div class="row justify-content-center mt-3">
-            <div class="col-md-7">
-                <h4>Q.2 Which command is used to print the current working directory?</h4>
-                <p class="option p-2 rounded">cd</p>
-                <p class="option p-2 rounded">ls</p>
-                <p class="correct p-2 rounded">pwd<i class="bi bi-check-all ms-2"></i></p>
-                <p class="option p-2 rounded">None of above</p>
-            </div>
-        </div> <!-- *****************************  Q.2 ************************************** -->
-        <div class="row justify-content-center mt-3">
-            <div class="col-md-7">
-                <h4>Q.2 Which command is used to print the current working directory?</h4>
-                <p class="option p-2 rounded">cd</p>
-                <p class="option p-2 rounded">ls</p>
-                <p class="correct p-2 rounded">pwd<i class="bi bi-check-all ms-2"></i></p>
-                <p class="option p-2 rounded">None of above</p>
-            </div>
-        </div> <!-- *****************************  Q.2 ************************************** -->
-        <div class="row justify-content-center mt-3">
-            <div class="col-md-7">
-                <h4>Q.2 Which command is used to print the current working directory?</h4>
-                <p class="option p-2 rounded">cd</p>
-                <p class="option p-2 rounded">ls</p>
-                <p class="correct p-2 rounded">pwd<i class="bi bi-check-all ms-2"></i></p>
-                <p class="option p-2 rounded">None of above</p>
-            </div>
-        </div> <!-- *****************************  Q.2 ************************************** -->
-        <div class="row justify-content-center mt-3">
-            <div class="col-md-7">
-                <h4>Q.2 Which command is used to print the current working directory?</h4>
-                <p class="option p-2 rounded">cd</p>
-                <p class="option p-2 rounded">ls</p>
-                <p class="correct p-2 rounded">pwd<i class="bi bi-check-all ms-2"></i></p>
-                <p class="option p-2 rounded">None of above</p>
-            </div>
-        </div> <!-- *****************************  Q.2 ************************************** -->
-        <div class="row justify-content-center mt-3">
-            <div class="col-md-7">
-                <h4>Q.2 Which command is used to print the current working directory?</h4>
-                <p class="option p-2 rounded">cd</p>
-                <p class="option p-2 rounded">ls</p>
-                <p class="correct p-2 rounded">pwd<i class="bi bi-check-all ms-2"></i></p>
-                <p class="option p-2 rounded">None of above</p>
-            </div>
-        </div> <!-- *****************************  Q.2 ************************************** -->
-        <div class="row justify-content-center mt-3">
-            <div class="col-md-7">
-                <h4>Q.2 Which command is used to print the current working directory?</h4>
-                <p class="option p-2 rounded">cd</p>
-                <p class="option p-2 rounded">ls</p>
-                <p class="correct p-2 rounded">pwd<i class="bi bi-check-all ms-2"></i></p>
-                <p class="option p-2 rounded">None of above</p>
-            </div>
-        </div> <!-- *****************************  Q.2 ************************************** -->
-        <div class="row justify-content-center mt-3">
-            <div class="col-md-7">
-                <h4>Q.2 Which command is used to print the current working directory?</h4>
-                <p class="option p-2 rounded">cd</p>
-                <p class="option p-2 rounded">ls</p>
-                <p class="correct p-2 rounded">pwd<i class="bi bi-check-all ms-2"></i></p>
-                <p class="option p-2 rounded">None of above</p>
-            </div>
-        </div> <!-- *****************************  Q.2 ************************************** -->
-        <div class="row justify-content-center mt-3">
-            <div class="col-md-7">
-                <h4>Q.2 Which command is used to print the current working directory?</h4>
-                <p class="option p-2 rounded">cd</p>
-                <p class="option p-2 rounded">ls</p>
-                <p class="correct p-2 rounded">pwd<i class="bi bi-check-all ms-2"></i></p>
-                <p class="option p-2 rounded">None of above</p>
-            </div>
-        </div> <!-- *****************************  Q.2 ************************************** -->
-        <div class="row justify-content-center mt-3">
-            <div class="col-md-7">
-                <h4>Q.2 Which command is used to print the current working directory?</h4>
-                <p class="option p-2 rounded">cd</p>
-                <p class="option p-2 rounded">ls</p>
-                <p class="correct p-2 rounded">pwd<i class="bi bi-check-all ms-2"></i></p>
-                <p class="option p-2 rounded">None of above</p>
-            </div>
-        </div> <!-- *****************************  Q.2 ************************************** -->
-        <div class="row justify-content-center mt-3">
-            <div class="col-md-7">
-                <h4>Q.2 Which command is used to print the current working directory?</h4>
-                <p class="option p-2 rounded">cd</p>
-                <p class="option p-2 rounded">ls</p>
-                <p class="correct p-2 rounded">pwd<i class="bi bi-check-all ms-2"></i></p>
-                <p class="option p-2 rounded">None of above</p>
-            </div>
-        </div> <!-- *****************************  Q.2 ************************************** -->
-        <div class="row justify-content-center mt-3">
-            <div class="col-md-7">
-                <h4>Q.2 Which command is used to print the current working directory?</h4>
-                <p class="option p-2 rounded">cd</p>
-                <p class="option p-2 rounded">ls</p>
-                <p class="correct p-2 rounded">pwd<i class="bi bi-check-all ms-2"></i></p>
-                <p class="option p-2 rounded">None of above</p>
-            </div>
-        </div> <!-- *****************************  Q.2 ************************************** -->
-        <div class="row justify-content-center mt-3">
-            <div class="col-md-7">
-                <h4>Q.2 Which command is used to print the current working directory?</h4>
-                <p class="option p-2 rounded">cd</p>
-                <p class="option p-2 rounded">ls</p>
-                <p class="correct p-2 rounded">pwd<i class="bi bi-check-all ms-2"></i></p>
-                <p class="option p-2 rounded">None of above</p>
-            </div>
-        </div> <!-- *****************************  Q.2 ************************************** -->
-        <div class="row justify-content-center mt-3">
-            <div class="col-md-7">
-                <h4>Q.2 Which command is used to print the current working directory?</h4>
-                <p class="option p-2 rounded">cd</p>
-                <p class="option p-2 rounded">ls</p>
-                <p class="correct p-2 rounded">pwd<i class="bi bi-check-all ms-2"></i></p>
-                <p class="option p-2 rounded">None of above</p>
-            </div>
-        </div> <!-- *****************************  Q.2 ************************************** -->
-        <div class="row justify-content-center mt-3">
-            <div class="col-md-7">
-                <h4>Q.2 Which command is used to print the current working directory?</h4>
-                <p class="option p-2 rounded">cd</p>
-                <p class="option p-2 rounded">ls</p>
-                <p class="correct p-2 rounded">pwd<i class="bi bi-check-all ms-2"></i></p>
-                <p class="option p-2 rounded">None of above</p>
-            </div>
-        </div> <!-- *****************************  Q.2 ************************************** -->
-        <div class="row justify-content-center mt-3">
-            <div class="col-md-7">
-                <h4>Q.2 Which command is used to print the current working directory?</h4>
-                <p class="option p-2 rounded">cd</p>
-                <p class="option p-2 rounded">ls</p>
-                <p class="correct p-2 rounded">pwd<i class="bi bi-check-all ms-2"></i></p>
-                <p class="option p-2 rounded">None of above</p>
-            </div>
-        </div> <!-- *****************************  Q.2 ************************************** -->
-        <div class="row justify-content-center mt-3">
-            <div class="col-md-7">
-                <h4>Q.2 Which command is used to print the current working directory?</h4>
-                <p class="option p-2 rounded">cd</p>
-                <p class="option p-2 rounded">ls</p>
-                <p class="correct p-2 rounded">pwd<i class="bi bi-check-all ms-2"></i></p>
-                <p class="option p-2 rounded">None of above</p>
-            </div>
-        </div> <!-- *****************************  Q.2 ************************************** -->
-        <div class="row justify-content-center mt-3">
-            <div class="col-md-7">
-                <h4>Q.2 Which command is used to print the current working directory?</h4>
-                <p class="option p-2 rounded">cd</p>
-                <p class="option p-2 rounded">ls</p>
-                <p class="correct p-2 rounded">pwd<i class="bi bi-check-all ms-2"></i></p>
-                <p class="option p-2 rounded">None of above</p>
+                <h4>Q.99 LRU - II</h4>
+                <span>
+                  How many hits occur in LRU page replacement algorithm for the given reference string with four page frames  <br>
+7,0,1,2,0,3,4,0,3,2,0,1? 
+                </span>
+                <p class="option p-2 rounded">3</p>
+                <p class="option p-2 rounded">4</p>
+                <p class="correct p-2 rounded">5<i class="bi bi-check-all ms-2"></i></p>
+                <p class="option p-2 rounded">6</p>
             </div>
         </div> <!-- *****************************  Q.2 ************************************** -->
         <div class="row justify-content-center mt-3">
